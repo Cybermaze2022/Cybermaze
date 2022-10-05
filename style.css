@@ -21,28 +21,7 @@
   100%   { transform: translate(0, -0px); }   
 }
 
-/* Reveal Transition */
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
-.reveal2{
-  position: absolute;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
 
-.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
-}
-.reveal2.active{
-  transform: translateY(0px);
-  opacity: 1;
-} 
 
 /* h2{
   font-family: "Azonix";
@@ -79,80 +58,9 @@ nav{
     text-align: center;
 }
 
-/* DONT EDIT */
 
-/* /* Navigation Bar  */
-#navbar{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#navbar:hover{
-    transition: ease-in 0.4s;
-    box-shadow: inset 0 10000px 0 0 #202337;
-    
-}
-
-
-
-#navbar {
-    position: relative;
-    z-index: 1;
-    
-}
-
-
-#navbar ul{
-    display: flex;
-    transform: translateX(198%);
-    
     
 
-}
-
-#navbar::before{
-    content: "";
-    
-   
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-    
-
-}
-
-#navbar ul li{
-    
-    list-style: none;
-    font-size: 1.5rem;
-    
-
-
-}
-
-#navbar ul li a {
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.9375em 1.25em;
-    border-radius: 0.9375em;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    float: left;
-    text-transform: uppercase;
-}
-    
-    
-
-
-#navbar ul li a:hover{
-    color:rgba(199, 110, 110, 0.654);
-    
-}
 
 .abt{
     font-size: x-large;
@@ -302,7 +210,7 @@ a{
   height: 13.75em;
   background: #fff;
   padding: 1.875em;
-  border-radius: 50%;
+  border-radius: 50px;
   box-shadow: 0 0 22px #3336;
   transition: .6s;
   margin: 0  1.5625em;
@@ -323,13 +231,12 @@ a{
 }
 .img img{
   width: 100%;
-  border-radius: 50%;
+  border-radius : 50px;
+
   box-shadow: 0 0 1.375em #3336;
   transition: .6s;
 }
-.profile-card:hover img{
-  border-radius: 0.625em;
-}
+
 .caption{
   text-align: center;
   transform: translateY(-80px);
@@ -364,6 +271,7 @@ a{
 
 .navc{
   font-family: 'Poppins';
+  transform: translateX(-15px);
 }
 
 
@@ -373,7 +281,7 @@ a{
 }
 
 .mainhero{
-  background-image: url(imgs/batua.png);
+  background-image: url(imgs/batua2.png);
   
   width:100%;
   height:37.5em;  
@@ -386,12 +294,13 @@ a{
   font-family: 'Lato';
 }
 
-/* TEASERAA */
+/* TEASER */
 .btn{
   /* z-index: 2;
   position:absolute;
   transform: translate(500%);
   font-size: 5rem; */
+  transform: translateX(-8px);
 }
 .video{
   transform: translate(-125%,-10%)scale(-1);
@@ -429,11 +338,82 @@ a{
   color: white;
   font-family: 'Poppins';
   font-size: 1rem;
-  transform: translateX(44px) scale(1);
+  transform: translateX(14px) scale(1);
 }
 .clip{
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  align-self: center;
+  align-self: center; */
 }
 
+
+.ad{
+  position: absolute;
+  z-index: 100;
+  width: 40em;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:1024px){
+  .clip{
+    transform: translateX(-253px);
+  }
+  /* .navt{
+    transform: translateX(-45%);
+  } */
+}
+@media only screen and (max-width:769px){
+  .clip{
+    transform: translateX(-253px)  scale(0.7);
+  }
+}
+@media only screen and (max-width:413px){
+  body{
+    max-width: 413px;
+  }
+  .clip {
+    transform: translateX(-600px);
+  }
+  /* .navt{
+    transform: translateX(-275px);
+  } */
+  /* .navc{
+    transform: translateX(-285px);
+  } */
+  .video.active{
+    transform: translate(32%,-21%)scale(0.4)
+  }
+  /* .mainhero{
+    width: 176%;
+  } */
+  .btn{
+        transform: translateX(-408px);
+  }
+  .close.active{
+    transform: translateX(-451px) scale(1);
+  }
+  .close{
+    transform: translateX(-451px) scale(0);
+  }
+  .beech2 {
+    transform: translateX(-18px);
+    font-size: 15px;
+  }
+  .sideplz{
+    transform: translateX(-296px)
+  }
+  .sideplz2{
+    transform: translateX(-78%);
+  }
+}
+
+
+
+.about{
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+
+
+ 
