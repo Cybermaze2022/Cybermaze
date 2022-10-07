@@ -30,6 +30,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #1A1A1A;
 }
 nav{
     z-index: 2;
@@ -74,6 +75,7 @@ nav{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
   }
   
   
@@ -202,7 +204,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #1A1A1A;;
 }
 .profile-card{
   position: relative;
@@ -290,8 +292,8 @@ a{
 
 }
 
-.rules{
-  font-family: 'Lato';
+#rules{
+ color: #000;
 }
 
 /* TEASER */
@@ -414,6 +416,22 @@ a{
   font-size: 20px;
 }
 
+.leftu{
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
 
+.glass1{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: 0.3s;
+}
+.glass1:hover{
+  transform: translateY(-20px);
+}
 
- 
