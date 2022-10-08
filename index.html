@@ -22,6 +22,8 @@
 
 
 
+
+
   <link rel="stylesheet" href="css/style.css" />
   <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
 </head>
@@ -251,8 +253,8 @@
       <div class="flex flex-col text-center w-full mb-20">
         <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1" id="groups">CYBERMAZE</h2>
         <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white-900"
-          style="font-family:Druk Wide Bold; color: white;">Groups for Participation</h>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Different Criteria for Particpation in Cybermaze are
+          style="font-family:Druk Wide Bold; color: white;">Groups for Participation</h><br><br>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="font-size: 1.4rem ;">Different Criteria for Particpation in Cybermaze are
             listed below.</p>
 
       </div>
@@ -279,7 +281,7 @@
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4 ">
               <div class="bg-black-100 p-6 rounded-lg glass1">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/MIDDLE.png" alt="content">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/capture.png" alt="content">
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Capture</h3>
                 <h2 class="text-lg text-white-900 font-medium title-font mb-4">Middle Group</h2>
                 <p class="leading-relaxed text-base">Students from class VI-VIII can only participate in this event.
@@ -288,7 +290,7 @@
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-white-100 p-6 rounded-lg glass1">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/SENIOR.png" alt="content">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/configure.png" alt="content">
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Configure</h3>
                 <h2 class="text-lg text-white-900 font-medium title-font mb-4" style="color: white;">Senior Group</h2>
                 <p class="leading-relaxed text-base">Students from IX-XII can only participate in this event.</p>
@@ -296,7 +298,7 @@
             </div>
             <div class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-white-100 p-6 rounded-lg glass1">
-                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/open.png" alt="content">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="imgs/Open (1).png" alt="content">
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Open Events</h3>
                 <h2 class="text-lg text-white-900 font-medium title-font mb-4" style="color: white ;">Open Events</h2>
                 <p class="leading-relaxed text-base">Students from class III to XII can participate in this event.
@@ -482,13 +484,17 @@
       style="font-family:Druk Wide Bold ;">Concatenate - Junior Group</h1>
   </div>
   <section class="text-black-600 body-font " id="jr" >
-
+    
     <div class="container px-5 py-24 mx-auto ">
       <div class="flex flex-wrap -m-4">
-        <div class="p-4 lg:w-1/3 ">
+        <div class="p-4 lg:w-1/3 "> 
+          
+          
           <div class="h-full bg-black-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative glass1">
+
             <h2 class="tracking-widest text-xs title-font font-medium text-white-400 mb-1" style="font-family: Poppins;">
               Class - III</h2>
+              
             <h1 class="title-font sm:text-2xl text-xl font-medium text-white-900 mb-3" style="font-family: Poppins;">
               Interface Designing</h1>
             <p class="leading-relaxed mb-3 leftu" style="font-family: Poppins;">Software: Open<br>
@@ -507,6 +513,7 @@
             </div>
           </div>
         </div>
+        
         <div class="p-4 lg:w-1/3">
           <div
             class="h-full bg-black-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative glass1">
@@ -931,6 +938,12 @@
  -->
 
 
+
+
+
+ 
+
+
   <h1 class="teams reveal" id="teams" style="font-family: Druk Wide Bold ;">OUR TEAM</h1>
 
   <div class="main" >
@@ -1036,6 +1049,25 @@
       video.classList.add('noactive');
       close2.classList.add('noactive');
     }
+
+    const buttons = document.querySelectorAll("[data-carousel-button]")
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
+
+    const activeSlide = slides.querySelector("[data-active]")
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+
+    slides.children[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+  })
+})
   </script>
   
 
