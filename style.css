@@ -281,13 +281,15 @@ a{
 
 .mainhero{
   background-image: url(imgs/batua2.png);
-  
   width:100%;
   height:35.7em;  
   background-position: center;
 } 
 
+.imgcon {
+  width: 18%;
 
+}
 
 #rules{
  color: #000;
@@ -445,6 +447,11 @@ a{
   text-shadow: 0 0 10px #000,
                0 0 20px #000;
 }
+.imgcon {
+  width: 18%;
+
+}
+
 
 .grps button:hover{
   background-color: white;
@@ -695,4 +702,7 @@ a{
 	transform-origin: -12vw 11vh;
 	box-shadow: 40vmin 0 5.9420960083040155vmin currentColor;
 }
+
+
+
 
