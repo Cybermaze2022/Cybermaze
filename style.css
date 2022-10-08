@@ -368,7 +368,7 @@ a{
     transform: translateX(-253px)  scale(0.7);
   }
 }
-@media only screen and (max-width:413px){
+@media only screen and (max-width:416px){
   body{
     max-width: 413px;
   }
