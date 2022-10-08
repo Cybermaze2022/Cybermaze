@@ -382,7 +382,7 @@ a{
     transform: translateX(-285px);
   } */
   .video.active{
-    transform: translate(32%,-21%)scale(0.4)
+    transform: translate(32%,-21%)scale(0.3)
   }
   /* .mainhero{
     width: 176%;
@@ -404,8 +404,8 @@ a{
     transform: translateX(-296px)
   }
   .sideplz2 {
-    transform: translateX(-73%);
-    font-size: 12.5px;
+    transform: translateX(-78%);
+    font-size: 11.5px;
   }
   .main {
     width: 100%;
