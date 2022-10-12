@@ -5,7 +5,7 @@
   src: url(FontsFree-Net-Druk-Wide-Bold.ttf);
 }
 @font-face{
-  font-family: 'Souvenir Lt bt';
+  font-family: 'Souvenir Lt BT';
   src: url(Souvenir Lt BT.ttf);
 }
 ::-webkit-scrollbar{
@@ -275,7 +275,7 @@ a{
   font-size: 3.125em;
 }
 .bbms{
-  font-family: 'Souvenir Lt bt';
+  font-family: 'Souvenir Lt BT';
   font-size: 4rem;
   transform: translate(58%, -217%);
   text-align: center;
