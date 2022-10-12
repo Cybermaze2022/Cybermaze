@@ -4,6 +4,10 @@
   font-family: 'Druk Wide Bold';
   src: url(FontsFree-Net-Druk-Wide-Bold.ttf);
 }
+@font-face{
+  font-family: 'Souvenir Lt bt';
+  src: url(Souvenir Lt BT.ttf);
+}
 ::-webkit-scrollbar{
   width: 10px;
 }
