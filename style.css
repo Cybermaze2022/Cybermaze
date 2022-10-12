@@ -270,6 +270,13 @@ a{
   text-align: center;
   font-size: 3.125em;
 }
+.bbms {
+  font-family: 'Souvenir Lt bt';
+  font-size: 2.9rem;
+  transform: translate(99%, -274%);
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .navc{
   font-family: 'Poppins';
@@ -283,7 +290,7 @@ a{
 }
 
 .mainhero{
-  background-image: url(imgs/BATAU9.jpg);
+  background-image: url(imgs/BATAU9.png);
   width:100%;
   height:42em;  
   scale: 1;
@@ -293,6 +300,10 @@ a{
 .imgcon {
   width: 18%;
 
+}
+
+#sr{
+  padding: 1px 1px;
 }
 
 #rules{
@@ -361,7 +372,7 @@ a{
   width: 40em;
 }
 .imglogo {
-  transform: translateX(20%) translateY(-339%);
+  transform: translateX(20%) translateY(-368%);
   z-index: -100;
   justify-content: center;
   align-items: center;
@@ -370,8 +381,12 @@ a{
   scale: 0.7;
 }
 
-
 /* RESPONSIVE */
+@media only screen and (max-width:1441px){
+  .mainhero{
+    background: url(imgs/BATUA9\ SMALL.png);
+  }
+}
 @media only screen and (max-width:1025px){
   .clip{
     transform: translateX(-253px);
@@ -380,6 +395,7 @@ a{
     transform: translateY(-392%) translateX(70px);
     scale: 0.8;
   }
+ 
   /* .navt{
     transform: translateX(-45%);
   } */
@@ -564,6 +580,12 @@ a{
 
 }
 
+.chunchun{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
 
 .grps button:hover{
   background-color: white;
