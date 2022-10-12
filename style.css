@@ -6,7 +6,7 @@
 }
 @font-face{
   font-family: 'Souvenir Lt BT';
-  src: url(Souvenir Lt BT.ttf);
+  src: url(Souvenir-Lt-BT.ttf);
 }
 ::-webkit-scrollbar{
   width: 10px;
@@ -528,14 +528,47 @@ a{
     margin: 30px 1.5625em;
   }
 }
-
-@media only screen and (max-width:361px){
+@media only screen and (max-width:394px){
+  .res-logo{
+    transform: translateX(-82%) translateY(-326%);
+  }
+  .sideplz2{
+    transform: translateX(-82%);
+  }
+}
+@media only screen and (max-width:391px){
+  .res-logo {
+    visibility: visible;
+    transform: translateX(-86%) translateY(-326%);
+    scale: 1;
+  }
+  .sideplz2{
+    transform: translateX(-83%);
+  }
+}
+@media only screen and (max-width:376px){
   .sideplz2 {
     transform: translateX(-88%);
+    font-size: 11.2px;
+  }
+  .res-logo {
+    visibility: visible;
+    transform: translateX(-91%) translateY(-343%);
+    scale: 1;
+  }
+  .clip {
+    transform: translateX(-606px);
+  }
+}
+
+@media only screen and (max-width:361px){
+  
+  .sideplz2 {
+    transform: translateX(-94%);
     font-size: 10.5px;
   }
   .sideplz {
-    transform: translateX(-304px);
+    transform: translateX(-321px);
   }
   .video.active {
     transform: translate(29%,-21%)scale(0.35);
@@ -551,6 +584,15 @@ a{
   .teams{
     transform: translateY(-16%);
   }
+  .res-logo{
+    visibility: visible;
+    transform: translateX(-98%) translateY(-366%);
+    scale: 1;
+  }
+  .clip {
+    transform: translateX(-622px);
+  }
+
 }
 
 @media only screen and (max-width:359px){
