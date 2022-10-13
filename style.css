@@ -402,6 +402,16 @@ a{
 }
 
 /* RESPONSIVE */
+@media only screen and (max-width:1527px){
+  .bbms {
+    font-family: 'Souvenir Lt BT';
+    font-size: 4rem;
+    transform: translate(39%, -195%);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: -1;
+  }
+}
 @media only screen and (max-width:1441px){
   .mainhero{
     background: url(imgs/BATUA9\ SMALL.png);
@@ -418,8 +428,10 @@ a{
   .btn{
     transform: translateX(0px);
   }
-  .res-logo{
-    visibility: visible;
+}
+@media only screen and (max-width:1289px){
+  .bbms {
+    transform: translate(20%, -184%);
   }
 }
 @media only screen and (max-width:1025px){
@@ -466,7 +478,7 @@ a{
     transform: translateX(-292%);
   }
   .mainhero{
-    background: url(imgs/batua11.png);
+    background: url(imgs/bg2phone.jpg);
   }
   .res-logo {
     visibility: visible;
