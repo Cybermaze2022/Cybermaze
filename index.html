@@ -16,6 +16,7 @@
   <link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet"type="text/css" />
   <link rel="stylesheet" href="css/style.css" />
   <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+  
   <link rel="icon" href="./imgs/kogo.png" sizes="32x32">
 </head>
   
@@ -34,7 +35,7 @@
     <div class="mainhero" draggable="false">
 
 
-      <header class="text-white-600 body-font navbar">
+      <header class="text-white-600 body-font navbar" id="navbar">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0 sideplz">
             <div class="navt">
@@ -62,9 +63,9 @@
           <h1 href="#" class="close">Close</h1>
           
           <div class="clip">
-            <iframe width="960" height="540" class="video" src="https://www.youtube.com/embed/qy3kHsm3GLU"
+            <iframe width="960" height="540" class="video" src="https://www.youtube.com/embed/qy3kHsm3GLU?rel=0"
               title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture MUTED"
               allowfullscreen></iframe>  
           </div>
           <h1 class="bbms">Blue Bells Model School<br><span>Presents</span></h1>
@@ -79,6 +80,9 @@
 
       </header>
     </div>
+    <a href="#navbar" class="to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+    </a>
     
     <div class="background">
       <span></span>
@@ -940,11 +944,6 @@
       <div class="caption">
         <h3 style="font-family: Poppins;">Arnav Pathak</h3> 
         <p style="font-family: Poppins; color: rgb(255, 217, 0);">Class VIII-C</p> 
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
       </div>
     </div>
     <div class="profile-card glass1">
@@ -954,11 +953,6 @@
       <div class="caption">
         <h3 style="font-family: Poppins;">Ishan Singh</h3>
         <p style="font-family: Poppins; color: rgb(255, 217, 0);">Class VIII-D</p> 
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
       </div>
     </div>
 
@@ -969,11 +963,6 @@
       <div class="caption">
         <h3 style="font-family: Poppins;">Panav Kaushik</h3>
         <p style="font-family: Poppins; color: rgb(255, 217, 0);">Class VIII-C</p> 
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
       </div>
     </div>
 </div>
@@ -1034,10 +1023,7 @@
       video.classList.add('noactive');
       close2.classList.add('noactive');
     }
-    window.addEventListener("scroll", function(){
-      var header = document.querySelectorAll('.navbar');
-      header.classList.toggle("sticky", window.scrollY > 0);
-    })
+   
     // document.ready(function() {
     //   window.addEventListener('scroll', (e) => {
     //     if (Math.round(window.scrollTop()) > 100) {
@@ -1047,12 +1033,19 @@
     //     }
     //   });
     // });
+    const toTop = document.querySelector(".to-top");
 
-    
-    
-
+    window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
   </script>
+  
+  
   
 
 
@@ -1090,7 +1083,6 @@
           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
         </svg>
       </a>
-
     </div>
   </footer>
 
@@ -1098,9 +1090,10 @@
 
 
 
-
+  
 
 
   </body>
+  
 
 </html>
