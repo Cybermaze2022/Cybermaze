@@ -27,6 +27,10 @@
   50%  { transform: translate(0, 10px); }
   100%   { transform: translate(0, -0px); }   
 }
+.navbarside2{
+  transform: translateX(-55%);
+}
+
 
 
 
@@ -545,6 +549,9 @@ a{
   .mainhero{
     background: url(imgs/bg2phone.jpg);
     z-index: -10;
+  }
+  .sideplz3{
+    transform: translateX(-199%);
   }
   .res-logo {
     visibility: visible;
