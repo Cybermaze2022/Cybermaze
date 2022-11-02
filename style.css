@@ -337,9 +337,10 @@ a{
   font-size: 5rem; */
   transform: translateX(-84%);
 }
-.navbarside{
-  transform: translateX(-21%);
+.navbarside {
+  transform: translateX(-27%);
 }
+
 .video{
   transform: translate(-125%,-10%)scale(-1);
   overflow: hidden;
@@ -531,6 +532,10 @@ a{
     transform: translateY(-938%) translateX(29%);
     scale: 0.53;
   }
+  .navc {
+    font-family: 'Poppins';
+    transform: translateX(11px);
+  }
   .bbms{
     transform: translate(43%, -316%);
     font-size: 2.3rem;
@@ -600,7 +605,7 @@ a{
     transform: translateX(-296px)
   }
   .sideplz2 {
-    transform: translateX(-78%);
+    transform: translateX(-107%);
     font-size: 11.5px;
   }
   .main {
@@ -620,7 +625,7 @@ a{
     transform: translateX(-82%) translateY(-326%);
   }
   .sideplz2{
-    transform: translateX(-82%);
+    transform: translateX(-105%);
   }
 }
 @media only screen and (max-width:391px){
@@ -629,13 +634,13 @@ a{
     transform: translateX(-86%) translateY(-326%);
     scale: 1;
   }
-  .sideplz2{
-    transform: translateX(-83%);
+  .sideplz2 {
+    transform: translateX(-107%);
   }
 }
 @media only screen and (max-width:376px){
   .sideplz2 {
-    transform: translateX(-88%);
+    transform: translateX(-112%);
     font-size: 11.2px;
   }
   .res-logo {
@@ -651,7 +656,7 @@ a{
 @media only screen and (max-width:361px){
   
   .sideplz2 {
-    transform: translateX(-94%);
+    transform: translateX(-127%);
     font-size: 10.5px;
   }
   .sideplz {
